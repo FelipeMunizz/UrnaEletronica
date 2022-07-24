@@ -60,28 +60,28 @@ namespace ApiUrnaEletronica.Migrations
                         {
                             Id = 1,
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ElectoralNumber = 91,
-                            FullName = "Abel da Silva",
-                            Party = "PT",
-                            ViceCandidateName = "Vorli Chiquio"
+                            ElectoralNumber = 13,
+                            FullName = "Miguel Soares",
+                            Party = "XT",
+                            ViceCandidateName = "Roberto Andrade"
                         },
                         new
                         {
                             Id = 2,
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ElectoralNumber = 92,
-                            FullName = "Nelson Back",
-                            Party = "PSD",
-                            ViceCandidateName = "Ambrosio Rubick"
+                            ElectoralNumber = 14,
+                            FullName = "Carlos Bispo",
+                            Party = "PRDT",
+                            ViceCandidateName = "João Esteves"
                         },
                         new
                         {
                             Id = 3,
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ElectoralNumber = 93,
-                            FullName = "Ambrosio Rubick ",
-                            Party = "MDB",
-                            ViceCandidateName = "	José Adálcio Krieger"
+                            ElectoralNumber = 15,
+                            FullName = "Paulo Apolinario",
+                            Party = "PLD",
+                            ViceCandidateName = "Cristovão Colombo"
                         });
                 });
 

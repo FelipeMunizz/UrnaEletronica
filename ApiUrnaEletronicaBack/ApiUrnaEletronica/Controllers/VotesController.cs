@@ -1,33 +1,30 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UrnaBackend.Services.Interfaces;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+namespace UrnaBackend.Controllers;
 
-namespace UrnaBackend.Controllers
+[Route("[controller]")]
+[ApiController]
+public class VotesController : ControllerBase
 {
-    [Route("[controller]")]
-    [ApiController]
-    public class VotesController : ControllerBase
+    private readonly IVoteRepository _voteRepository;
+
+    public VotesController(IVoteRepository voteRepository)
     {
-        private readonly IVoteRepository _voteService;
+        _voteRepository = voteRepository;
+    }
 
-        public VotesController(IVoteRepository voteService)
-        {
-            _voteService = voteService;
-        }
+    [HttpGet]
+    public async Task<IActionResult> Get(bool isSorted)
+    {
+        var candidates = await _voteRepository.GetVotes(isSorted);
+        return candidates != null ? Ok(candidates) : Unauthorized("Falha ao buscar os candidatos");
+    }
 
-        [HttpGet]
-        public async Task<IActionResult> Get(bool isSorted)
-        {
-            var candidates = await _voteService.GetVotes(isSorted);
-            return candidates != null ? Ok(candidates) : Unauthorized("Falha ao buscar os candidatos");
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] int electoralNumber)
-        {
-            var candidateExists = await _voteService.AddVote(electoralNumber);
-            return candidateExists == true ? Ok() : NotFound("O candidato que você está tentando votar não existe");
-        }
+    [HttpPost]
+    public async Task<IActionResult> Post([FromBody] int electoralNumber)
+    {
+        var candidateExists = await _voteRepository.AddVote(electoralNumber);
+        return candidateExists == true ? Ok() : NotFound("O candidato que você está tentando votar não existe");
     }
 }

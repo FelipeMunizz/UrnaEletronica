@@ -49,17 +49,17 @@ namespace ApiUrnaEletronica.Migrations
             migrationBuilder.InsertData(
                 table: "Candidates",
                 columns: new[] { "Id", "ElectoralNumber", "FullName", "Party", "ViceCandidateName" },
-                values: new object[] { 1, 91, "Abel da Silva", "PT", "Vorli Chiquio" });
+                values: new object[] { 1, 13, "Miguel Soares", "XT", "Roberto Andrade" });
 
             migrationBuilder.InsertData(
                 table: "Candidates",
                 columns: new[] { "Id", "ElectoralNumber", "FullName", "Party", "ViceCandidateName" },
-                values: new object[] { 2, 92, "Nelson Back", "PSD", "Ambrosio Rubick" });
+                values: new object[] { 2, 14, "Carlos Bispo", "PRDT", "João Esteves" });
 
             migrationBuilder.InsertData(
                 table: "Candidates",
                 columns: new[] { "Id", "ElectoralNumber", "FullName", "Party", "ViceCandidateName" },
-                values: new object[] { 3, 93, "Ambrosio Rubick ", "MDB", "	José Adálcio Krieger" });
+                values: new object[] { 3, 15, "Paulo Apolinario", "PLD", "Cristovão Colombo" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Votes_CandidateId",
