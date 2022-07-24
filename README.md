@@ -1,15 +1,15 @@
-<p>Projeto de <strong>urna eletrônica</strong> desenvolvido em <strong>DotNet e React c/ Typescript.</strong></p>
+<p>Desenvolvimento de uma Urna eletrônica que simula uma eleição Presidencial</p>
 
 
 
-<h1>🗳️ Urna Eletrônica</h1>
+<h1>Urna Eletrônica</h1>
 <ul>
   <li>Votação para presidente.</li>
   <li>Formulário de criação e remoção de novos candidatos.</li>
   <li>Dashboard com gráficos que mostram o andamento da eleição.</li>
 </ul>
 
-<h2>💻 Tecnologias</h2>
+<h2>Tecnologias</h2>
 <h3>Front End</h3>
 <ul>
   <li>ReactJS</li>
@@ -27,7 +27,7 @@
   <li>Entity Framework</li>
 </ul>
 
-<h2>⚙️ Como rodar</h2>
+<h2>Como rodar</h2>
 <p>Esteja na pasta raíz do projeto utilizando o CMD e execute os seguintes comandos:</p>
 
 <h3>API</h3>
