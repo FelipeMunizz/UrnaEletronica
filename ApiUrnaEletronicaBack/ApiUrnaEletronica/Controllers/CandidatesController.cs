@@ -10,13 +10,13 @@ namespace UrnaApi.Controllers
     public class CandidatesController : ControllerBase
     {
         private readonly ILogger<CandidatesController> _logger;
-        private readonly UrnaContext _dbContext;
-        private readonly ICandidateService _candidatesService;
+        private readonly UrnaContext _context;
+        private readonly ICandidateRepository _candidatesService;
 
-        public CandidatesController(ILogger<CandidatesController> logger, UrnaContext dbContext, ICandidateService candidatesService)
+        public CandidatesController(ILogger<CandidatesController> logger, UrnaContext context, ICandidateRepository candidatesService)
         {
             _logger = logger;
-            _dbContext = dbContext;
+            _context = context;
             _candidatesService = candidatesService;
         }
 

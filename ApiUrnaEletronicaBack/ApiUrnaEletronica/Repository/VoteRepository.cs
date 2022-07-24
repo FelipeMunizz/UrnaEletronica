@@ -7,12 +7,12 @@ using UrnaBackend.Services.Interfaces;
 
 namespace UrnaBackend.Services
 {
-    public class VoteService : IVoteService
+    public class VoteRepository : IVoteRepository
     {
         private readonly UrnaContext _dbContext;
         private readonly IMapper _mapper;
 
-        public VoteService(UrnaContext dbContext, IMapper mapper)
+        public VoteRepository(UrnaContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
             _mapper = mapper;

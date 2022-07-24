@@ -17,8 +17,8 @@ builder.Services.AddSwaggerGen();
 string connectionstring = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<UrnaContext>(options =>
  options.UseSqlServer(connectionstring));
-builder.Services.AddTransient<ICandidateService, CandidateService>();
-builder.Services.AddTransient<IVoteService, VoteService>();
+builder.Services.AddTransient<ICandidateRepository, CandidateRepository>();
+builder.Services.AddTransient<IVoteRepository, VoteRepository>();
 
 builder.Services.AddCors(options =>
 {

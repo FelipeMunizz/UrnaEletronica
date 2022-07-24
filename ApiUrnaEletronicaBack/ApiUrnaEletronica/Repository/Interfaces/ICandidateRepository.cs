@@ -2,7 +2,7 @@
 
 namespace UrnaBackend.Services.Interfaces
 {
-    public interface ICandidateService
+    public interface ICandidateRepository
     {
         public Task<bool> DeleteCandidate(int candidateId);
         public Task<bool> AddCandidate(CandidateRegisterDto candidate);

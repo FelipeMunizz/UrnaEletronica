@@ -6,13 +6,13 @@ using UrnaBackend.Services.Interfaces;
 
 namespace UrnaBackend.Services
 {
-    public class CandidateService : ICandidateService
+    public class CandidateRepository : ICandidateRepository
     {
         private readonly UrnaContext _dbContext;
         private readonly IMapper _mapper;
 
 
-        public CandidateService(UrnaContext dbContext, IMapper mapper)
+        public CandidateRepository(UrnaContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
             _mapper = mapper;

@@ -9,9 +9,9 @@ namespace UrnaBackend.Controllers
     [ApiController]
     public class VotesController : ControllerBase
     {
-        private readonly IVoteService _voteService;
+        private readonly IVoteRepository _voteService;
 
-        public VotesController(IVoteService voteService)
+        public VotesController(IVoteRepository voteService)
         {
             _voteService = voteService;
         }
