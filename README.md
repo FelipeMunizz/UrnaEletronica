@@ -92,7 +92,7 @@ Para fazer o deploy desse projeto na pasta raiz execute:
 
 **Front-end:** React, ReactToastify, React Router Dom, Typescript, Chart.js, Node.js
 
-**Back-end:** .NET 6, AspNet Web API, Entity Framewor, Auto Mapper
+**Back-end:** .NET 6, AspNet Web API, Entity Framework, Auto Mapper
 
 
 ## Autores
