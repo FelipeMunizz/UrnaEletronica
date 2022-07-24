@@ -24,7 +24,7 @@ public class VotesController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Post([FromBody] int electoralNumber)
     {
-        var candidateExists = await _voteRepository.AddVote(electoralNumber);
-        return candidateExists == true ? Ok() : NotFound("O candidato que você está tentando votar não existe");
+        var candidateExiste = await _voteRepository.AddVote(electoralNumber);
+        return candidateExiste == true ? Ok() : NotFound("O candidato que você está tentando votar não existe");
     }
 }

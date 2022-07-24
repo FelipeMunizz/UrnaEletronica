@@ -29,9 +29,9 @@ public class CandidatesController : ControllerBase
     [HttpDelete]
     public async Task<IActionResult> Delete([FromBody] int candidateId)
     {
-        var beenDeleted = await _candidatesRepository.DeleteCandidate(candidateId);
+        var candidate = await _candidatesRepository.DeleteCandidate(candidateId);
 
-        return beenDeleted ? Ok() : NotFound("O candidato com o ID enviado não foi encontrado");
+        return candidate ? Ok() : NotFound("O candidato com o ID enviado não foi encontrado");
     }
 
     [HttpPost]
@@ -42,8 +42,8 @@ public class CandidatesController : ControllerBase
             return BadRequest("A legenda do candidato deve haver dois digitos");
         }
 
-        var candidateAlreadyExists = await _candidatesRepository.AddCandidate(candidate);
+        var candidateExiste = await _candidatesRepository.AddCandidate(candidate);
 
-        return candidateAlreadyExists == true ? Unauthorized("O candidato com esta legenda já existe") : Ok();
+        return candidateExiste == true ? Unauthorized("O candidato com esta legenda já existe") : Ok();
     }
 }
