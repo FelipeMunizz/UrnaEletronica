@@ -1,0 +1,19 @@
+.dashboard-title {
+	text-align: center;
+	margin-bottom: 1.8rem;
+	margin-top: 1rem;
+}
+
+.chart {
+	margin: 0 auto;
+	min-width: 40rem;
+	max-width: 50rem;
+	height: 18rem;
+}
+
+.charts-area {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+

@@ -1,0 +1,138 @@
+* {
+	font-family: sans-serif;
+}
+
+.urn {
+	display:flex;
+	width: fit-content;
+	height: 26rem;
+	box-shadow: 1px 1px 2px gray;
+	background-color: #d4cec2da;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 4rem auto;
+}
+
+.vote-display {
+	padding: 0.8rem 2rem;
+}
+
+.screen {
+	margin: 1rem 2rem;
+	padding: 1rem 1rem;
+	box-shadow: 1px 1px 2px gray;
+	width: 25em;
+	background-color: #E4E4E4;
+	border-radius: 10px;
+	height: 19rem;
+}
+
+.electoral-number {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.mayor-title {
+	margin: 1.3rem 0;
+	text-align: center;
+}
+
+.slots {
+	display: flex;
+	margin: 0 1rem;
+}
+
+.digit-slot {
+	width: 3rem;
+	height: 3rem;
+	border: solid 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hide {
+	display:none;
+}
+
+.candidate-data {
+	margin: 0.7rem 0.5rem;
+
+}
+
+.mayor-title {
+	margin-left: 1.7rem;
+}
+
+.keyboard-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 15em;
+	background-color: #474543b7;
+}
+
+.keyboard-numbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.keyboard-digit {
+	background-color: #1816178c;
+	color: #f3f1ecec;
+	cursor: pointer;
+	font-size: 2.3rem;
+	padding: 0 2.1rem;
+	border-radius: 5px;
+	border: none;
+}
+
+.white-btn, .erase-btn, .confirm-btn {
+	margin: 2rem 0.3rem;
+	border:none;
+	padding: 0 0.6rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.9rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	border-radius: 4px;
+	cursor: pointer
+}
+
+.white-btn {
+	background-color: #FEFFF9;
+}
+
+.erase-btn {
+	background-color: #ff5e00fb;
+	color:#fefff9;
+}
+
+.confirm-btn {
+	background-color: #03c450;
+	color:#fefff9;
+
+}
+
+.end-screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.end-label {
+	font-size: 2.8rem;
+}
+
+.restart-message {
+	font-size: 1.2rem;
+}

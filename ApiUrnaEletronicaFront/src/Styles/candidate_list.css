@@ -1,0 +1,49 @@
+
+.candidates-table {
+	margin: 2rem auto;
+}
+
+.table-title {
+	text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 3rem;
+}
+
+.candidates-table, .candidates-table th, .candidates-table td {
+	text-align: center;
+	width: 60%;
+	border: solid 1px;
+	border-collapse: collapse;
+}
+
+.candidates-table td {
+	padding: 1.5rem 0.8rem;
+}
+
+.candidates-table th {
+	padding: 0.7rem 1rem;
+}
+
+.delete-btn {
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.delete-btn img {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.candidate-list-title {
+	text-align: center;
+	margin-bottom: 1.8rem;
+	margin-top: 2rem;
+}
+
+.no-candidate-message {
+	text-align: center;
+	color: rgba(180, 0, 0, 0.911);
+}

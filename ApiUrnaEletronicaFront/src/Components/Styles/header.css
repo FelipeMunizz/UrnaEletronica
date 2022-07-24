@@ -1,0 +1,27 @@
+header {
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.884);
+}
+
+.nav-menu {
+	display: flex;
+}
+
+.nav-item {
+	margin: 0 1.8rem;
+	list-style: none;
+}
+
+.nav-text {
+	font-size: 1.2rem;
+	color: #ffffffd2;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.nav-text:hover {
+	color: #ffffff;
+}
