@@ -1,55 +1,98 @@
-<p>Desenvolvimento de uma Urna eletrônica que simula uma eleição Presidencial</p>
+
+# Api Urna Eletrônica
+
+Sistema simula uma urna eletrônica numa eleição presidencial
 
 
+## Funcionalidades
 
-<h1>Urna Eletrônica</h1>
-<ul>
-  <li>Votação para presidente.</li>
-  <li>Formulário de criação e remoção de novos candidatos.</li>
-  <li>Dashboard com gráficos que mostram o andamento da eleição.</li>
-</ul>
+- Votação para Presidente.
+- Inclusão e remoção de novos candidatos.
+- Tela com gráficos para acompanhamento da eleição.
 
-<h2>Tecnologias</h2>
-<h3>Front End</h3>
-<ul>
-  <li>ReactJS</li>
-  <li>ReactToastify</li>
-  <li>React Router Dom</li>
-  <li>Typescript</li>
-  <li>Chart.js</li>
-  <li>Node.js</li>
-</ul>
 
-<h3>Back End</h3>
-<ul>
-  <li>DotNet Core 6</li>
-  <li>AspNet Web API</li>
-  <li>Entity Framework</li>
-</ul>
+# Documentação da API
 
-<h2>Como rodar</h2>
-<p>Esteja na pasta raíz do projeto utilizando o CMD e execute os seguintes comandos:</p>
+## Candidatos
 
-<h3>API</h3>
+#### Retorna Candidato Pelo Seu Número Eleitoral
 
-```
-cd api
-cd UrnaApi
-dotnet run
+```http
+  GET /Candidates
 ```
 
-<p>Abra outra instância do terminal na pasta raíz do projeto e execute:</p>
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `Query` | `int` | **Obrigatório**. Numero Eleitoral do Candidato |
 
-<h3>React</h3>
 
+#### Deletar um Candidato
+
+```http
+  DELETE/Candidates
 ```
-cd client
-npm install
-npm start
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `Body`      | `int` | **Obrigatório**. O ID do item que você quer excluir|
+
+#### Adicionar um Candidato
+
+```http
+  Post/Candidates
 ```
 
-<h2>Dependências necessárias</h2>
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `Body`      | `string` | **Obrigatório**. Preencher os itens|
 
-[DotNet 6.0.7](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+## Votos
 
-[Node](https://nodejs.org/en/download/)
+### Retorna todos os votos dos Candidatos
+
+```http
+  GET /Votes
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `Query` | `bool` | **Obrigatório**. É Classificado? true / false |
+
+```http
+  Post/Votes
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `Body`      | `string` | **Obrigatório**. Preencher os itens|
+
+
+## Deploy
+
+Para fazer o deploy desse projeto na pasta raiz execute:
+
+### Api
+
+```bash
+  dotnet run
+```
+
+### React
+
+```bash
+  npm install
+  npm start
+```
+
+
+## Stack utilizada
+
+**Front-end:** React, ReactToastify, React Router Dom, Typescript, Chart.js, Node.js
+
+**Back-end:** .NET 6, AspNet Web API, Entity Framewor, Auto Mapper
+
+
+## Autores
+
+- [@Felipe Muniz](https://www.github.com/FelipeMunizz)
+
