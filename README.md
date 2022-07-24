@@ -50,6 +50,6 @@ npm start
 
 <h2>Dependências necessárias</h2>
 
-[DotNet 6.0.4](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+[DotNet 6.0.7](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
 [Node](https://nodejs.org/en/download/)
