@@ -74,12 +74,15 @@ Para fazer o deploy desse projeto na pasta raiz execute:
 ### Api
 
 ```bash
+  cd ApiUrnaEletronicaBack
+  cd ApiUrnaEletronica
   dotnet run
 ```
 
 ### React
 
 ```bash
+  cd ApiUrnaEletronicaFront
   npm install
   npm start
 ```
