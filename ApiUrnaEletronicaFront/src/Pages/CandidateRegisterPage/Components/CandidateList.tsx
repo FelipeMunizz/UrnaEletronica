@@ -29,7 +29,7 @@ export default function CandidateList({
             <tr>
               <th>Nome completo</th>
               <th>Vice</th>
-              <th>Nº de votação</th>
+              <th>Legenda</th>
               <th>Partido</th>
             </tr>
           </thead>
