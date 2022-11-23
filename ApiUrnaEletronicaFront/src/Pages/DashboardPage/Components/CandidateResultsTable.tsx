@@ -14,6 +14,7 @@ export default function CandidateResultsTable({
               <th>Nome completo</th>
               <th>Vice</th>
               <th>Nº de votação</th>
+              <th>Quantidade de Votos</th>
               <th>Partido</th>
             </tr>
           </thead>
@@ -22,6 +23,7 @@ export default function CandidateResultsTable({
               return (
                 <tr>
                   <td>{candidate.fullName}</td>
+                  <td>{candidate.viceCandidateName}</td>
                   <td>{candidate.electoralNumber}</td>
                   <td>{candidate.voteCount}</td>
                   <td>{candidate.party}</td>

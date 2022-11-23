@@ -122,3 +122,8 @@ E:\Projetos\Apis\ApiUrnaEletronica\ApiUrnaEletronicaBack\ApiUrnaEletronica\obj\D
 E:\Projetos\Apis\ApiUrnaEletronica\ApiUrnaEletronicaBack\ApiUrnaEletronica\obj\Debug\net6.0\ApiUrnaEletronica.pdb
 E:\Projetos\Apis\ApiUrnaEletronica\ApiUrnaEletronicaBack\ApiUrnaEletronica\obj\Debug\net6.0\ApiUrnaEletronica.genruntimeconfig.cache
 E:\Projetos\Apis\ApiUrnaEletronica\ApiUrnaEletronicaBack\ApiUrnaEletronica\obj\Debug\net6.0\ref\ApiUrnaEletronica.dll
+E:\Projetos\Apis\ApiUrnaEletronica\ApiUrnaEletronicaBack\ApiUrnaEletronica\obj\Debug\net6.0\staticwebassets\msbuild.ApiUrnaEletronica.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Projetos\Apis\ApiUrnaEletronica\ApiUrnaEletronicaBack\ApiUrnaEletronica\obj\Debug\net6.0\staticwebassets\msbuild.build.ApiUrnaEletronica.props
+E:\Projetos\Apis\ApiUrnaEletronica\ApiUrnaEletronicaBack\ApiUrnaEletronica\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ApiUrnaEletronica.props
+E:\Projetos\Apis\ApiUrnaEletronica\ApiUrnaEletronicaBack\ApiUrnaEletronica\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ApiUrnaEletronica.props
+E:\Projetos\Apis\ApiUrnaEletronica\ApiUrnaEletronicaBack\ApiUrnaEletronica\obj\Debug\net6.0\staticwebassets.pack.json
